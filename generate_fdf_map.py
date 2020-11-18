@@ -18,10 +18,6 @@ for i in range(picture.size[0]):
 	for j in range(picture.size[1]):
 		summ = pixels[i,j][0] + pixels[i,j][1] + pixels[i,j][2]
 		arr[i][j] = d - (summ % d)
-		#if pixels[i,j] != (255, 255, 255):
-		#	arr[i][j] = 10
-		#else:
-		#	arr[i][j] = 0
 fdf = open("out.fdf", 'w+')
 for i in range(picture.size[0]):
 	for j in range(picture.size[1]):
